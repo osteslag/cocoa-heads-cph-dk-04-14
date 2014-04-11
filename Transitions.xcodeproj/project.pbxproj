@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29113FD418F7FF7700FA8F29 /* JBAnimatedTabTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 29113FD318F7FF7700FA8F29 /* JBAnimatedTabTransition.m */; };
 		292CFF9218F5CDE00096B786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CFF9118F5CDE00096B786 /* Foundation.framework */; };
 		292CFF9418F5CDE00096B786 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CFF9318F5CDE00096B786 /* CoreGraphics.framework */; };
 		292CFF9618F5CDE00096B786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CFF9518F5CDE00096B786 /* UIKit.framework */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29113FD218F7FF7700FA8F29 /* JBAnimatedTabTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAnimatedTabTransition.h; sourceTree = "<group>"; };
+		29113FD318F7FF7700FA8F29 /* JBAnimatedTabTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAnimatedTabTransition.m; sourceTree = "<group>"; };
 		292CFF8E18F5CDE00096B786 /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CFF9118F5CDE00096B786 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		292CFF9318F5CDE00096B786 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +84,8 @@
 				292CFFA118F5CDE00096B786 /* JBAppDelegate.m */,
 				292CFFC018F5CED00096B786 /* JBChildViewController.h */,
 				292CFFC118F5CED00096B786 /* JBChildViewController.m */,
+				29113FD218F7FF7700FA8F29 /* JBAnimatedTabTransition.h */,
+				29113FD318F7FF7700FA8F29 /* JBAnimatedTabTransition.m */,
 				292CFFA318F5CDE00096B786 /* Images.xcassets */,
 				292CFF9818F5CDE00096B786 /* Supporting Files */,
 			);
@@ -161,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				292CFFA218F5CDE00096B786 /* JBAppDelegate.m in Sources */,
+				29113FD418F7FF7700FA8F29 /* JBAnimatedTabTransition.m in Sources */,
 				292CFFC218F5CED00096B786 /* JBChildViewController.m in Sources */,
 				292CFF9E18F5CDE00096B786 /* main.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "JBAppDelegate.h"
 #import "JBChildViewController.h"
+#import "JBAnimatedTabTransition.h"
 
 @implementation JBAppDelegate
 
@@ -21,11 +22,19 @@
     return YES;
 }
 
+#pragma mark - UITabBarControllerDelegate Protocol
+
+// Return the object we want to perform the transition animation.
+- (id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController {
+	return [[JBAnimatedTabTransition alloc] init];
+}
+
 #pragma mark - Private Methods
 
 - (UIViewController *)JB_configuredRootViewController {
     
     UITabBarController *rootTabBarController = [[UITabBarController alloc] init];
+	rootTabBarController.delegate = self;
     [self JB_configureTabBarController:rootTabBarController];
     
     return rootTabBarController;
